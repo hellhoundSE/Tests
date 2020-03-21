@@ -1,0 +1,272 @@
+﻿Log level is set to Informational (Default).
+Test data store opened in 0,022 sec.
+[20.03.2020 9:05:58.303 ] ---------- Discovery started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.51]   Discovering: XUnitTestProject1
+[xUnit.net 00:00:01.63]   Discovered:  XUnitTestProject1
+[20.03.2020 9:06:01.989 ] ========== Discovery finished: 3 tests found (0:00:03,6721001) ==========
+Executing test method: XUnitTestProject1.Controllers.UsersInitTests.GetUsers_200Ok
+[20.03.2020 9:06:02.110 ] ---------- Run started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.16]   Starting:    XUnitTestProject1
+[xUnit.net 00:00:04.12]   Finished:    XUnitTestProject1
+[20.03.2020 9:06:07.301 ] ========== Run finished: 1 tests run (0:00:05,1742637) ==========
+[20.03.2020 9:18:03.864 ] ---------- Discovery started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.50]   Discovering: XUnitTestProject1
+[xUnit.net 00:00:01.63]   Discovered:  XUnitTestProject1
+[20.03.2020 9:18:07.003 ] ========== Discovery finished: 3 tests found (0:00:02,866828) ==========
+Executing test method: XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok
+[20.03.2020 9:18:07.128 ] ---------- Run started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.47]   Starting:    XUnitTestProject1
+[xUnit.net 00:00:04.21]     XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok [FAIL]
+[xUnit.net 00:00:04.21]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:04.22]       Stack Trace:
+[xUnit.net 00:00:04.22]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Repositories\UserRepository.cs(30,0): at Library.Repositories.UserRepository.AddUser(UserDto userToAdd)
+[xUnit.net 00:00:04.22]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Controllers\UsersController.cs(29,0): at Library.Controllers.UsersController.AddUser(UserDto user)
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:04.22]            at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:04.22]            at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass10_0.<<SendAsync>b__0>d.MoveNext()
+[xUnit.net 00:00:04.22]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:04.22]            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[xUnit.net 00:00:04.22]            at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[xUnit.net 00:00:04.22]         C:\Users\ruslan\Desktop\pro\pro\Library\XUnitTestProject1\Controllers\UsersInitTests.cs(76,0): at XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok()
+[xUnit.net 00:00:04.22]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:04.24]   Finished:    XUnitTestProject1
+[20.03.2020 9:18:12.418 ] ========== Run finished: 1 tests run (0:00:05,2789481) ==========
+[20.03.2020 9:20:30.080 ] ---------- Discovery started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.18]   Discovering: XUnitTestProject1
+[xUnit.net 00:00:01.25]   Discovered:  XUnitTestProject1
+[20.03.2020 9:20:32.372 ] ========== Discovery finished: 3 tests found (0:00:02,2853744) ==========
+Executing test method: XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok
+[20.03.2020 9:20:32.402 ] ---------- Run started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.14]   Starting:    XUnitTestProject1
+[xUnit.net 00:00:03.57]     XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok [FAIL]
+[xUnit.net 00:00:03.57]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:03.57]       Stack Trace:
+[xUnit.net 00:00:03.58]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Repositories\UserRepository.cs(30,0): at Library.Repositories.UserRepository.AddUser(UserDto userToAdd)
+[xUnit.net 00:00:03.58]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Controllers\UsersController.cs(29,0): at Library.Controllers.UsersController.AddUser(UserDto user)
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.58]            at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.58]            at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass10_0.<<SendAsync>b__0>d.MoveNext()
+[xUnit.net 00:00:03.58]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.58]            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[xUnit.net 00:00:03.58]            at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[xUnit.net 00:00:03.58]         C:\Users\ruslan\Desktop\pro\pro\Library\XUnitTestProject1\Controllers\UsersInitTests.cs(76,0): at XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok()
+[xUnit.net 00:00:03.58]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.60]   Finished:    XUnitTestProject1
+[20.03.2020 9:20:36.848 ] ========== Run finished: 1 tests run (0:00:04,3861918) ==========
+[20.03.2020 9:22:39.921 ] ---------- Discovery started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.31]   Discovering: XUnitTestProject1
+[xUnit.net 00:00:01.37]   Discovered:  XUnitTestProject1
+[20.03.2020 9:22:42.104 ] ========== Discovery finished: 4 tests found (0:00:02,1808673) ==========
+Executing test method: XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok
+[20.03.2020 9:22:42.252 ] ---------- Run started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.25]   Starting:    XUnitTestProject1
+[xUnit.net 00:00:03.71]     XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok [FAIL]
+[xUnit.net 00:00:03.71]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:03.71]       Stack Trace:
+[xUnit.net 00:00:03.72]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Repositories\UserRepository.cs(30,0): at Library.Repositories.UserRepository.AddUser(UserDto userToAdd)
+[xUnit.net 00:00:03.72]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Controllers\UsersController.cs(29,0): at Library.Controllers.UsersController.AddUser(UserDto user)
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.72]            at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.72]            at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass10_0.<<SendAsync>b__0>d.MoveNext()
+[xUnit.net 00:00:03.72]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.72]            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[xUnit.net 00:00:03.72]            at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[xUnit.net 00:00:03.72]         C:\Users\ruslan\Desktop\pro\pro\Library\XUnitTestProject1\Controllers\UsersInitTests.cs(94,0): at XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok()
+[xUnit.net 00:00:03.72]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.74]   Finished:    XUnitTestProject1
+[20.03.2020 9:22:46.886 ] ========== Run finished: 1 tests run (0:00:04,6070215) ==========
+[20.03.2020 9:23:38.116 ] ---------- Discovery started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.36]   Discovering: XUnitTestProject1
+[xUnit.net 00:00:01.50]   Discovered:  XUnitTestProject1
+[20.03.2020 9:23:40.414 ] ========== Discovery finished: 4 tests found (0:00:02,2954551) ==========
+Executing test method: XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok
+[20.03.2020 9:23:40.662 ] ---------- Run started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.14]   Starting:    XUnitTestProject1
+[xUnit.net 00:00:04.24]     XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok [FAIL]
+[xUnit.net 00:00:04.24]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:04.24]       Stack Trace:
+[xUnit.net 00:00:04.24]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Repositories\UserRepository.cs(30,0): at Library.Repositories.UserRepository.AddUser(UserDto userToAdd)
+[xUnit.net 00:00:04.24]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Controllers\UsersController.cs(29,0): at Library.Controllers.UsersController.AddUser(UserDto user)
+[xUnit.net 00:00:04.24]            at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+[xUnit.net 00:00:04.24]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+[xUnit.net 00:00:04.24]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+[xUnit.net 00:00:04.24]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:04.25]            at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:04.25]            at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass10_0.<<SendAsync>b__0>d.MoveNext()
+[xUnit.net 00:00:04.25]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:04.25]            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[xUnit.net 00:00:04.25]            at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[xUnit.net 00:00:04.25]         C:\Users\ruslan\Desktop\pro\pro\Library\XUnitTestProject1\Controllers\UsersInitTests.cs(94,0): at XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok()
+[xUnit.net 00:00:04.25]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:04.27]   Finished:    XUnitTestProject1
+[20.03.2020 9:23:45.868 ] ========== Run finished: 1 tests run (0:00:05,185014) ==========
+[20.03.2020 9:24:48.140 ] ---------- Discovery started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.26]   Discovering: XUnitTestProject1
+[xUnit.net 00:00:01.34]   Discovered:  XUnitTestProject1
+[20.03.2020 9:24:50.348 ] ========== Discovery finished: 4 tests found (0:00:02,2061196) ==========
+Executing test method: XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok
+[20.03.2020 9:24:50.373 ] ---------- Run started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.17]   Starting:    XUnitTestProject1
+[xUnit.net 00:00:03.61]     XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok [FAIL]
+[xUnit.net 00:00:03.61]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:03.61]       Stack Trace:
+[xUnit.net 00:00:03.61]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Repositories\UserRepository.cs(30,0): at Library.Repositories.UserRepository.AddUser(UserDto userToAdd)
+[xUnit.net 00:00:03.62]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Controllers\UsersController.cs(29,0): at Library.Controllers.UsersController.AddUser(UserDto user)
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.62]            at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.62]            at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass10_0.<<SendAsync>b__0>d.MoveNext()
+[xUnit.net 00:00:03.62]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.62]            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[xUnit.net 00:00:03.62]            at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[xUnit.net 00:00:03.62]         C:\Users\ruslan\Desktop\pro\pro\Library\XUnitTestProject1\Controllers\UsersInitTests.cs(94,0): at XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok()
+[xUnit.net 00:00:03.62]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.64]   Finished:    XUnitTestProject1
+[20.03.2020 9:24:54.852 ] ========== Run finished: 1 tests run (0:00:04,4617694) ==========
+[20.03.2020 9:26:54.333 ] ---------- Discovery started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.19]   Discovering: XUnitTestProject1
+[xUnit.net 00:00:01.25]   Discovered:  XUnitTestProject1
+[20.03.2020 9:26:56.443 ] ========== Discovery finished: 4 tests found (0:00:02,1084078) ==========
+Executing test method: XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok
+[20.03.2020 9:26:56.566 ] ---------- Run started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.19]   Starting:    XUnitTestProject1
+[xUnit.net 00:00:03.65]     XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok [FAIL]
+[xUnit.net 00:00:03.65]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:03.66]       Stack Trace:
+[xUnit.net 00:00:03.66]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Repositories\UserRepository.cs(30,0): at Library.Repositories.UserRepository.AddUser(UserDto userToAdd)
+[xUnit.net 00:00:03.66]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Controllers\UsersController.cs(29,0): at Library.Controllers.UsersController.AddUser(UserDto user)
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.66]            at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.66]            at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass10_0.<<SendAsync>b__0>d.MoveNext()
+[xUnit.net 00:00:03.66]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.66]            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[xUnit.net 00:00:03.66]            at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[xUnit.net 00:00:03.66]         C:\Users\ruslan\Desktop\pro\pro\Library\XUnitTestProject1\Controllers\UsersInitTests.cs(99,0): at XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok()
+[xUnit.net 00:00:03.66]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.68]   Finished:    XUnitTestProject1
+[20.03.2020 9:27:01.065 ] ========== Run finished: 1 tests run (0:00:04,490964) ==========
+[20.03.2020 9:28:10.165 ] ---------- Discovery started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.30]   Discovering: XUnitTestProject1
+[xUnit.net 00:00:01.37]   Discovered:  XUnitTestProject1
+[20.03.2020 9:28:12.533 ] ========== Discovery finished: 4 tests found (0:00:02,3648298) ==========
+Executing test method: XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok
+[20.03.2020 9:28:12.599 ] ---------- Run started ----------
+[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.1 (64-bit .NET Core 4.6.28207.03)
+[xUnit.net 00:00:01.18]   Starting:    XUnitTestProject1
+[xUnit.net 00:00:03.58]     XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok [FAIL]
+[xUnit.net 00:00:03.58]       System.NullReferenceException : Object reference not set to an instance of an object.
+[xUnit.net 00:00:03.59]       Stack Trace:
+[xUnit.net 00:00:03.59]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Repositories\UserRepository.cs(30,0): at Library.Repositories.UserRepository.AddUser(UserDto userToAdd)
+[xUnit.net 00:00:03.59]         C:\Users\ruslan\Desktop\pro\pro\Library\Api\Controllers\UsersController.cs(29,0): at Library.Controllers.UsersController.AddUser(UserDto user)
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.59]            at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+[xUnit.net 00:00:03.59]            at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.TestHost.HttpContextBuilder.<>c__DisplayClass10_0.<<SendAsync>b__0>d.MoveNext()
+[xUnit.net 00:00:03.59]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.59]            at Microsoft.AspNetCore.TestHost.ClientHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[xUnit.net 00:00:03.59]            at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[xUnit.net 00:00:03.59]         C:\Users\ruslan\Desktop\pro\pro\Library\XUnitTestProject1\Controllers\UsersInitTests.cs(99,0): at XUnitTestProject1.Controllers.UsersInitTests.AddUser_200Ok()
+[xUnit.net 00:00:03.59]         --- End of stack trace from previous location where exception was thrown ---
+[xUnit.net 00:00:03.61]   Finished:    XUnitTestProject1
+[20.03.2020 9:28:17.078 ] ========== Run finished: 1 tests run (0:00:04,4627648) ==========
