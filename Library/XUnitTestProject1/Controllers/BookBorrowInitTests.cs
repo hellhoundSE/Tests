@@ -69,22 +69,30 @@ namespace XUnitTestProject1.Controllers
         }
         [Fact]
         public async Task UpdateBookBorrow_200Ok()
-        { 
+        {
             var payload = JsonConvert.SerializeObject(new
             {
-                idUser = "1",
-                idBook = "2",
-                comment = "After",
-            });
+                IdBookBorrow = 2,
+                idUser = 1,
+                IdBook = 2,
+                Comments = "After"
+            }) ;
 
             HttpContent c = new StringContent(payload, Encoding.UTF8, "application/json");
             var httpResponse = await _client.PutAsync($"{_client.BaseAddress.AbsoluteUri}api/book-borrows/2", c);
 
+            /*
             httpResponse.EnsureSuccessStatusCode();
             var content = await httpResponse.Content.ReadAsStringAsync();
             var bookBorrow = JsonConvert.DeserializeObject<BookBorrow>(content);
+            */
+            var _db = _server.Host.Services.GetRequiredService<LibraryContext>();
+            var bb = _db.BookBorrow.FirstOrDefault(b => b.IdBookBorrow == 2);
 
-            Assert.True(bookBorrow.IdBook == 1);
+            //Assert.True(bb.Comments == "Before");
+
+            Assert.True(bb.Comments == "After");
+
         }
 
         [Fact]
