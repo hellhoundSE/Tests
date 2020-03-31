@@ -44,7 +44,8 @@ namespace Library.Extensions
                         ClockSkew = TimeSpan.Zero,
                         ValidIssuer = "library.com",
                         ValidAudience = "library.com",
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(conf["SecretKey"]))
+                        //IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(conf["SecretKey"]))
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("secretkey"))
                     };
                 });
         }

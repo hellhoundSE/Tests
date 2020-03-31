@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -8,6 +9,7 @@ using Library.Models.DTO;
 using Library.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Library.Controllers
@@ -20,10 +22,14 @@ namespace Library.Controllers
 
         private const int TokenExpDurationInMin = 2;
 
-        public AccountController(IAccountRepository accountRepository, IConfiguration configuration)
+        private readonly ILogger<AccountController> _logger;
+
+        public AccountController(IAccountRepository accountRepository, IConfiguration configuration, ILogger<AccountController> logger)
         {
             _accountRepository = accountRepository;
             _configuration = configuration;
+            _logger = logger;
+
         }
 
 
@@ -33,8 +39,9 @@ namespace Library.Controllers
             var res = await _accountRepository.Login(login);
 
             if (res == null)
+            {
                 return BadRequest("Wrong login credentials");
-
+            }
             return Ok(new
             {
                 token = new JwtSecurityTokenHandler().WriteToken(CreateToken(res))
